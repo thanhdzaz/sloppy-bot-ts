@@ -12,17 +12,20 @@ const Commands = {
   leave,
   play,
   pause: (mes: any) => {
-    Voice.bind({ message: mes });
     Voice.pause();
   },
   next: (mes: any) => {
-    Voice.bind({ message: mes });
     Voice.next();
   },
   prev: (mes: any) => {
-    Voice.bind({ message: mes });
     Voice.prev();
   },
+  speak: () => {
+    Voice.speak();
+  },
+  s: () => {
+    Voice.speak();
+  }
 } as any;
 
 export default function messageHandling(command: string, message: Message<boolean>, bot: Client<boolean>) {
@@ -30,9 +33,10 @@ export default function messageHandling(command: string, message: Message<boolea
     const executer = Commands[command];
     if (!executer) {
       message.react('🙄');
-      message.reply('Lệnh không tồn tại');
+      message.reply('Cái đéo gì đấy tao không hiểu');
       return;
     }
+    Voice.bind({ message, channel: message.channel, guid: message.guild })
     executer(message, bot);
   });
 }

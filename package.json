@@ -19,7 +19,6 @@
     "fs": "^0.0.1-security",
     "ts-node": "^10.9.1",
     "tweetnacl": "^1.0.3",
-    "youtube-exec": "^1.0.4",
     "yt-get": "^1.1.2"
   },
   "devDependencies": {
