@@ -1,0 +1,28 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/bot.ts --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.16.0",
+    "discord.js": "^14.11.0",
+    "ffmpeg-static": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "ts-node": "^10.9.1",
+    "tweetnacl": "^1.0.3",
+    "youtube-exec": "^1.0.4",
+    "yt-get": "^1.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
