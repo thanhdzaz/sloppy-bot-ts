@@ -17,6 +17,7 @@
     "discord.js": "^14.11.0",
     "ffmpeg-static": "^5.1.0",
     "fs": "^0.0.1-security",
+    "gtts": "^0.2.1",
     "ts-node": "^10.9.1",
     "tweetnacl": "^1.0.3",
     "yt-get": "^1.1.2"

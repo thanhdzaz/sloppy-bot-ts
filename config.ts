@@ -1,4 +1,4 @@
 export default {
-  "token": "OTQyMDQwNzk2MjQzMzEyNjgw.GWosg5.VxdD8RjDvN2v7m7qJ0HD0jIV2zGdzutBO-PT6Q",// add token
+  "token": "OTQyMDQwNzk2MjQzMzEyNjgw.G_wL35.DoyIUkROerGA3RLZkf0uPF1qus3CXK2GWRMa8E",// add token
   "prefix": "?"
 }
